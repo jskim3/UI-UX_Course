@@ -1,0 +1,66 @@
+/*CSS = Cascading Style Sheets*/
+/*specify what element you want to style*/
+/*property name: value;*/
+body {
+    background-color: #1ca3d4;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Sans-serif is easier to read on a screen; Serif for print*/
+    /*Fonts in order of preference in case browser can't render*/
+    width: 100%;
+    height: 100%;
+    /* hidden gets rid of scroll bars*/
+    overflow: hidden;
+    /* margin and padding of body typically set to 0 and then items are given padding*/
+    margin: 0; /* space outside of the element*/
+    padding: 0; /* space inside of the element*/
+  }
+  
+  
+  /* # to reference an id*/
+  #logo {
+    width: 30%;
+  /* % is adaptive - will resize*/
+  }
+  
+  #productImage {
+    width: 500px;
+  /* px is hard-coded creates a static size*/
+  }
+  
+   /* % of width of parent object (e.g. 30% of body's width)
+  img {
+   
+    width: 30%;
+    0%;
+  }*/
+  
+  a {
+    color: purple;
+    text-decoration: underline;
+  }
+  
+  /*CSS flex box*/
+  #logoAndTitle, header, nav, #introAndMainImage {
+    display: flex; /* default stacks horizontal */
+    align-items: center;
+    justify-content: space-between; /* justify-content is part of display: flex; allows you to use defaults to set how content is spaced out*/
+    /* space-between takes available space and puts it between items*/
+  }
+  
+  #logoAndTitle {
+    width: 200px; 
+  }
+  
+  nav {
+    width: 350px; /*setting the width of the nav group*/
+  }
+  
+  header {
+    padding: 50px; /* space inside of the element*/
+    /* margin: 0px; /* space outside of the element*/
+    background-color: #1d91c2;
+  }
+  
+  #introAndMainImage {
+    padding: 20px 60px;
+  }
